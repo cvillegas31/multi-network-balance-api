@@ -4,17 +4,17 @@ This repository contains NodeJS with a single endpoint which when called with pa
 
 It supports the following networks
 
- mainnet
- rinkeby //boba network https://blockexplorer.rinkeby.boba.network/address/0x498968C2B945Ac37b78414f66167b0786E522636/transactions
- goerli
- kovan
- optimism-mainnet // https://optimistic.etherscan.io/
- optimism-kovan  // https://kovan-optimistic.etherscan.io/
- arbitrum-mainnet
- arbitrum-rinkeby
- polygon-mainnet  //https://polygonscan.com/
- polygon-mumbai
- gnosis
+ 1. mainnet
+ 2. rinkeby //boba network https://blockexplorer.rinkeby.boba.network/address/0x498968C2B945Ac37b78414f66167b0786E522636/transactions
+ 3. goerli
+ 4. kovan
+ 5. optimism-mainnet // https://optimistic.etherscan.io/
+ 6. optimism-kovan  // https://kovan-optimistic.etherscan.io/
+ 7. arbitrum-mainnet
+ 8. arbitrum-rinkeby
+ 9. polygon-mainnet  //https://polygonscan.com/
+ 10. polygon-mumbai
+ 11. gnosis
 
 
 ## Testing the API in a local environment
