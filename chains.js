@@ -17,14 +17,14 @@ Object.freeze(ChainId);
 const ChainName = {
     // ChainNames match infura network strings
     MAINNET: 'mainnet',
-    RINKEBY: 'rinkeby',
+    RINKEBY: 'rinkeby', //boba network https://blockexplorer.rinkeby.boba.network/address/0x498968C2B945Ac37b78414f66167b0786E522636/transactions
     GÖRLI: 'goerli',
     KOVAN: 'kovan',
-    OPTIMISM: 'optimism-mainnet',
-    OPTIMISTIC_KOVAN: 'optimism-kovan',
+    OPTIMISM: 'optimism-mainnet', // https://optimistic.etherscan.io/
+    OPTIMISTIC_KOVAN: 'optimism-kovan',  // https://kovan-optimistic.etherscan.io/
     ARBITRUM_ONE: 'arbitrum-mainnet',
     ARBITRUM_RINKEBY: 'arbitrum-rinkeby',
-    POLYGON: 'polygon-mainnet',
+    POLYGON: 'polygon-mainnet',  //https://polygonscan.com/
     POLYGON_MUMBAI: 'polygon-mumbai',
     GNOSIS: 'gnosis'
 };
@@ -114,7 +114,12 @@ function getProvider(id) {
     }
 };
 
-module.exports = { getNetworkId, getProvider }
+function getNativeCurrency(id) {
+    return NATIVE_CURRENCY[id];
+
+}
+
+module.exports = { getNetworkId, getProvider, getNativeCurrency }
 
 
 
