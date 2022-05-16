@@ -24,13 +24,11 @@ It supports the following networks
    node index.js
    ```
 
-   ```
 2. from a browser
    ```
    http://localhost:3001/api/balance/<network>/<address>
    http://localhost:3001/api/balance/polygon-mainnet/0x67B94473D81D0cd00849D563C94d0432Ac988B49
    ```
 
-   ```
 
 
