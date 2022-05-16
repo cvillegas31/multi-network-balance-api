@@ -1,6 +1,5 @@
 const ChainId = {
     MAINNET: 1,
-    ROPSTEN: 3,
     RINKEBY: 4,
     GÖRLI: 5,
     KOVAN: 42,
@@ -18,7 +17,6 @@ Object.freeze(ChainId);
 const ChainName = {
     // ChainNames match infura network strings
     MAINNET: 'mainnet',
-    ROPSTEN: 'ropsten',
     RINKEBY: 'rinkeby',
     GÖRLI: 'goerli',
     KOVAN: 'kovan',
@@ -44,7 +42,6 @@ Object.freeze(NativeCurrencyName);
 
 const NATIVE_CURRENCY = {
     [ChainId.MAINNET]: NativeCurrencyName.ETHER,
-    [ChainId.ROPSTEN]: NativeCurrencyName.ETHER,
     [ChainId.RINKEBY]: NativeCurrencyName.ETHER,
     [ChainId.GÖRLI]: NativeCurrencyName.ETHER,
     [ChainId.KOVAN]: NativeCurrencyName.ETHER,
@@ -61,8 +58,6 @@ function getNetworkId(name) {
     switch (name) {
         case ChainName.MAINNET:
             return ChainId.MAINNET;
-        case ChainName.ROPSTEN:
-            return ChainId.ROPSTEN;
         case ChainName.RINKEBY:
             return ChainId.RINKEBY;
         case ChainName.GÖRLI:
@@ -94,8 +89,6 @@ function getProvider(id) {
     switch (id) {
         case ChainId.MAINNET:
             return process.env.JSON_RPC_PROVIDER;
-        case ChainId.ROPSTEN:
-            return process.env.JSON_RPC_PROVIDER_ROPSTEN;
         case ChainId.RINKEBY:
             return process.env.JSON_RPC_PROVIDER_RINKEBY;
         case ChainId.GÖRLI:
